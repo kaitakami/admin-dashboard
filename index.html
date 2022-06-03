@@ -6,15 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/1b95a12645.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="container">
+        <!-- NAV -->
+        <nav id="nav">
+            <!-- LOGO -->
+            <div class="nav__logo"><i class="fa-brands fa-pied-piper-pp logo-icon"></i>Dashboard</div>
+            <!-- PRUEBONX -->
+            <div class="icon cancel-btn"><i class="fa-solid fa-times"></i></div>
+            <!--  -->
+            <!-- FIRST NAV -->
+            <div class="nav__first">
+                <ul class="nav__first__list">
+                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-house nav__list-item__icon"></i>Home</a></li>
+                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-address-card nav__list-item__icon"></i>Profile</a></li>
+                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-message nav__list-item__icon"></i></span>Messages</a></li>
+                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-clock nav__list-item__icon"></i>History</a></li>
+                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-list-check nav__list-item__icon"></i></span>Tasks</a></li>
+                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-users nav__list-item__icon"></i>Communities</a></li>
+                </ul>
+            </div>
+            <!-- SECOND NAV -->
+            <div class="nav__second">
+                <ul class="nav__second__list">
+                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-gear nav__list-item__icon"></i>Settings</a></li>
+                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-circle-question nav__list-item__icon"></i>Suport</a></li>
+                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-shield-halved nav__list-item__icon"></i>Privacy</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- HEADER -->
+        <header id="header">
+            <!-- PRUEBVAAAAAA -->
+            <div class="icon menu-btn"><i class="fa-solid fa-bars"></i></div>
+            <!-- HEADER BAR -->
+            <div class="header__top">
+                <div class="header__search-bar">
+                    <i class="fa-solid fa-magnifying-glass header__icon"></i>
+                    <input type="text" placeholder="Search" class="header__input">
+                </div>
+            </div>
+        </header>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

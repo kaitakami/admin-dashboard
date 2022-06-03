@@ -1,0 +1,135 @@
+:root {
+    --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --main-color: #f1f1f1;
+    --secondary-color: #ccc;
+    --main-background-color: #1f1f1f;
+    --secondary-background-color: #407ebc;
+    --nav-background-color: #262626;
+    --large-font-size: 1.5rem;
+    --medium-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --bold-font-weight: 700;
+    --normal-font-weight: 500;
+    --lighter-font-weight: 400;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--small-font-size);
+    font-weight: var(--normal-font-weight);
+    background-color: var(--main-background-color);
+    color: var(--main-color);
+}
+
+/* BODY CONTAINER */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+
+/* NAV */
+#nav {
+    width: 250px;
+    height: 100vh;
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 30px 30px 0 30px;
+    background-color: var(--nav-background-color);
+}
+
+
+/* LOGO */
+.nav__logo {
+    font-size: var(--large-font-size);
+    font-weight: var(--bold-font-weight);
+}
+
+.logo-icon {
+    color: var(--secondary-background-color);
+    margin-left: 10px;
+}
+
+/* NAV LISTS */
+.nav__first__list, .nav__second__list {
+    padding: 0;
+}
+
+.nav__list-item {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    list-style-type: none;
+}
+
+.nav__list-item a {
+    text-decoration: none;
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+.nav__list-item a:hover {
+    color: var(--secondary-color);
+}
+
+.nav__list-item__icon {
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+}
+
+
+/* PRUEBA */
+.icon {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.cancel-btn {
+    position: absolute;
+    right: 70px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 868px) {
+    #nav {
+        position: fixed;
+        top: 0;
+        left: -120%;
+        height: 100vh;
+        width: 100%;
+        place-items: start;
+        padding: 0;
+        padding-top: 40px;
+        padding-left: 44px;
+        gap: 0px;
+        transition: all 300ms ease;
+    }
+
+    #active {
+        left: 0%;
+    }
+
+    .nav__list-item {
+        font-size: var(--large-font-size);
+        margin-top: 22px;
+    }
+
+    .nav__list-item__icon {
+        font-size: 1.3rem;
+    }
+
+    .nav__logo {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
+}
+
