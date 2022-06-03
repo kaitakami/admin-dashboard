@@ -23,41 +23,183 @@
         <nav id="nav">
             <!-- LOGO -->
             <div class="nav__logo"><i class="fa-brands fa-pied-piper-pp logo-icon"></i>Dashboard</div>
-            <!-- PRUEBONX -->
+            <!-- CLOSE BUTTON -->
             <div class="icon cancel-btn"><i class="fa-solid fa-times"></i></div>
             <!--  -->
             <!-- FIRST NAV -->
             <div class="nav__first">
                 <ul class="nav__first__list">
-                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-house nav__list-item__icon"></i>Home</a></li>
-                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-address-card nav__list-item__icon"></i>Profile</a></li>
-                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-message nav__list-item__icon"></i></span>Messages</a></li>
-                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-clock nav__list-item__icon"></i>History</a></li>
-                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-list-check nav__list-item__icon"></i></span>Tasks</a></li>
-                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-users nav__list-item__icon"></i>Communities</a></li>
+                    <li class="nav__list-item"><a href="#"><i
+                                class="fa-solid fa-house nav__list-item__icon"></i>Home</a></li>
+                    <li class="nav__list-item"><a href="#"><i
+                                class="fa-solid fa-address-card nav__list-item__icon"></i>Profile</a></li>
+                    <li class="nav__list-item"><a href="#"><i
+                                class="fa-solid fa-message nav__list-item__icon"></i></span>Messages</a></li>
+                    <li class="nav__list-item"><a href="#"><i
+                                class="fa-solid fa-clock nav__list-item__icon"></i>History</a></li>
+                    <li class="nav__list-item"><a href="#"><i
+                                class="fa-solid fa-list-check nav__list-item__icon"></i></span>Tasks</a></li>
+                    <li class="nav__list-item"><a href="#"><i
+                                class="fa-solid fa-users nav__list-item__icon"></i>Communities</a></li>
                 </ul>
             </div>
             <!-- SECOND NAV -->
             <div class="nav__second">
                 <ul class="nav__second__list">
-                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-gear nav__list-item__icon"></i>Settings</a></li>
-                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-circle-question nav__list-item__icon"></i>Suport</a></li>
-                    <li class="nav__list-item"><a href="#"><i class="fa-solid fa-shield-halved nav__list-item__icon"></i>Privacy</a></li>
+                    <li class="nav__list-item"><a href="#"><i
+                                class="fa-solid fa-gear nav__list-item__icon"></i>Settings</a></li>
+                    <li class="nav__list-item"><a href="#"><i
+                                class="fa-solid fa-circle-question nav__list-item__icon"></i>Suport</a></li>
+                    <li class="nav__list-item"><a href="#"><i
+                                class="fa-solid fa-shield-halved nav__list-item__icon"></i>Privacy</a></li>
                 </ul>
             </div>
         </nav>
         <!-- HEADER -->
         <header id="header">
-            <!-- PRUEBVAAAAAA -->
-            <div class="icon menu-btn"><i class="fa-solid fa-bars"></i></div>
+            <!-- RESPONSIVE NAV -->
+            <div class="responsive-nav">
+                <!-- MENU BUTTON -->
+                <i class="fa-brands fa-pied-piper-pp logo-icon icon"></i>
+                <div class="icon menu-btn"><i class="fa-solid fa-bars"></i></div>
+            </div>
             <!-- HEADER BAR -->
-            <div class="header__top">
+            <div class="header-top">
                 <div class="header__search-bar">
                     <i class="fa-solid fa-magnifying-glass header__icon"></i>
-                    <input type="text" placeholder="Search" class="header__input">
+                    <input type="text" class="header__input">
+                </div>
+                <div class="header__user-info">
+                    <i class="fa-solid fa-bell header__icon notification-icon"></i>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cheatsheet.com%2Fwp-content%2Fuploads%2F2019%2F12%2FThomas-Middleditch-1024x680.jpg%3Fx79194&f=1&nofb=1"
+                        alt="User profile photo" class="user-photo header__img">
+                    <p class="header__user-name">El piedpipero</p>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="user-greeting">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cheatsheet.com%2Fwp-content%2Fuploads%2F2019%2F12%2FThomas-Middleditch-1024x680.jpg%3Fx79194&f=1&nofb=1"
+                        alt="User profile photo" class="user-photo header__img img-bottom">
+                    <p class="greeting-text">
+                        Hey there,<br>
+                        <span class="greeting-text-bold">El piedpipero (@piedpipero)</span>
+                    </p>
+                </div>
+                <div class="header__buttons">
+                    <button class="header__button"><a href="" class="header__button__link">New</a></button>
+                    <button class="header__button"><a href="" class="header__button__link">Upload</a></button>
+                    <button class="header__button"><a href="" class="header__button__link">Share</a></button>
                 </div>
             </div>
         </header>
+        <!-- MAIN -->
+        <main id="main">
+            <h3 class="main__title">Your Projects</h3>
+            <div class="main-container">
+                <div class="card">
+                    <div>
+                        <h4 class="card__title">Super Cool Project</h4>
+                        <p class="card__text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum commodi placeat,
+                            laboriosam ipsam qui eveniet reiciendis enim aliquam.
+                        </p>
+                    </div>
+                    <div class="card__icons">
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-eye-slash"></i></a>
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h4 class="card__title">Buy a webcam</h4>
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas dicta ratione?
+                        </p>
+                    </div>
+                    <div class="card__icons">
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-eye-slash"></i></a>
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h4 class="card__title">Create React App</h4>
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit, perferendis
+                            nesciunt, quia perspiciatis consectetur eaque dicta.
+                        </p>
+                    </div>
+                    <div class="card__icons">
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-eye-slash"></i></a>
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h4 class="card__title">Create a blog</h4>
+                        <p class="card__text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolor voluptatem culpa
+                            necessitatibus earum?
+                        </p>
+                    </div>
+                    <div class="card__icons">
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-eye-slash"></i></a>
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h4 class="card__title">Contact programmers</h4>
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae excepturi eum possimus
+                            reprehenderit ratione autem, doloribus quod.
+                        </p>
+                    </div>
+                    <div class="card__icons">
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-eye-slash"></i></a>
+                        <a href="#" class="card__icon-link"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside id="aside">
+            <div class="aside-container">
+                <h3 class="header__title">Announcements</h3>
+                <div class="aside__card">
+                    <h4 class="aside__title">Site Maintenance</h4>
+                    <p class="aside__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum eos
+                        magnam voluptas id. Quasi perspiciatis voluptate neque!</p>
+                    <hr>
+                    <h4 class="aside__title">Community Share Day</h4>
+                    <p class="aside__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quaerat sint
+                        optio hic, impedit delectus exercitationem.</p>
+                    <hr>
+                    <h4 class="aside__title">Update Privacy Policy</h4>
+                    <p class="aside__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque saepe
+                        reiciendis est labore pariatur? Quia fuga provident quas voluptates nisi.</p>
+                </div>
+                <h3 class="header__title">Trending</h3>
+                <div class="aside__card">
+                    <div class="user-mini-card">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.evetech.net%2Fcharacters%2F2113391657%2Fportrait%3Fsize%3D512&f=1&nofb=1"
+                            class="header__img">
+                        <p class="mini-card__text">BERTRAM GILFOYLE</p>
+                    </div>
+                    <div class="user-mini-card">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.miraheze.org%2Floathsomecharacterswiki%2F2%2F28%2FJianYang.jpg&f=1&nofb=1"
+                            class="header__img">
+                        <p class="mini-card__text">JIAN-YANG</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </aside>
     </div>
 
     <script src="script.js"></script>
